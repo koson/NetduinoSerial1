@@ -25,8 +25,6 @@ namespace NetduinoSerial1
 
             // wait forever...
             Thread.Sleep(Timeout.Infinite);
-
-
         }
         static void serial_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
@@ -39,7 +37,6 @@ namespace NetduinoSerial1
                 // read a single byte
                 serial.Read(bytes, 0, bytes.Length);
                 // send the same byte back
-
                 serial.Write(bytes, 0, bytes.Length);
             }
         }
